@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: "Lucida Grande";
+  }
+a {
+    text-decoration: none;
+  }
+ li{
+   list-style: none ;
+ }
+  .container {
+    width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  
+  .top-wrapper {
+    padding: 180px 0 100px 0;
+    background-image: url(https://wallpaperaccess.com/full/1234718.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+  }
+  
+  .top-wrapper h1 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 55px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .top-wrapper p {
+    font-size: 16px;
+    opacity: 0.7;
+    margin-bottom: 5px;
+  }
+  
+  .btn-wrapper {
+    margin: 20px 0;
+  }
+  
+  .btn-wrapper p {
+    margin: 10px 0;
+  }
+  
+  .menu {
+    background-color: #a76714;
+    margin-left: 10px
+  }
+
+  .more {
+    background-color: rgb(163, 140, 7);
+  }
+  
+  .btn {
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
+  
+  .fa {
+    margin-right: 5px;
+  }
+  
+  header {
+    width: 100%;
+    background-color: rgba(34, 49, 52, 0);
+    position:fixed ;
+    top: 0;
+    z-index : 10;
+  }
+  
+  
+  .header-list li a{
+    display: block;
+    float: right ;
+    color: white;
+    padding: 30px 30px;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  .header-list li a:hover{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+  }
+  
