@@ -1,39 +1,117 @@
-* {
-    margin: 0;
-    padding:0;
-}
 body {
+    margin: 0;
     font-family: sans-serif;
-}
-.container {
+  }
+a {
+    text-decoration: none;
+  }
+ li{
+   list-style: none ;
+ }
+  .container {
     width: 1170px;
+    padding: 0 15px;
     margin: 0 auto;
   }
-.top-wrapper {
-    color:rgb(12, 182, 97);
-    margin: 20px;
-    text-align: center;
-    background-size: cover;
-    background-image: url(https://www.pointbleudesign.com/wp-content/uploads/2019/09/European-Specialty-Coffee-Market-by-Pointbleu-Design-Blog.jpg);
-    background-position: center;
-    height: 500px;
-}
-.top-wrapper h1 {
-    padding: 20px;
-    word-spacing: 5px;
-}
-.top-wrapper h3{
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
-}
-.container ul li {
-    text-align: center;
-    color: rgb(203, 235, 231);
-    list-style: none;
   
-}
+  .top-wrapper {
+    padding: 180px 0 100px 0;
+    background-image: url(https://wallpaperaccess.com/full/1234718.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+  }
+  
+  .top-wrapper h1 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 55px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .top-wrapper p {
+    font-size: 16px;
+    opacity: 0.7;
+    margin-bottom: 5px;
+  }
+  
+  .btn-wrapper {
+    margin: 20px 0;
+  }
+  
+  .btn-wrapper p {
+    margin: 10px 0;
+  }
+  
+  .menu {
+    background-color: #a76714;
+    margin-left: 10px
+  }
+
+  .more {
+    background-color: rgb(163, 140, 7);
+  }
+
+  .signup {
+    background-color: #239b76;
+    margin-top:20px;
+  }
+
+  .btn {
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+    text-decoration: none;
+    text-decoration-color: #588879;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
+  
+  .fa {
+    margin-right: 5px;
+  }
+  
+  
+  .main-wrapper {
+    height: 500px;
+    padding-bottom: 80px;
+    background-color: #d1c8c0;
+    text-align: center;
+  }
+
+  .heading {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    color: #5f5d60;
+  }
+
+  .heading h3{
+    font-weight: normal;
+    color: #5f5d60;
+  }
+
+  .drink{
+    float:left;
+    width: 33.33%;
+  }
+
+  .drink img{
+    width: 250px;
+    height: 200px;
+    border-radius:5px;
+  }
+
+  .message-wrapper {
+    margin-top: 60px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 80px;
+    text-align: center;
+  }
 .container p {
     font-size: 25px;
     text-align-last: center;
