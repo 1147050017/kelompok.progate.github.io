@@ -10,23 +10,27 @@
   </head>
   <body>
     <header>
-      <div class="container">
+      <div class="head-container">
         <!-- <div class="header-left">
           <img class="logo" src="https://prog-8.com/images/html/advanced/main_logo.png">
         </div> -->
         <!-- Tambahkan ikon menu disini -->
-        <div clas="header-left">
-          <span class="fa fa-bars menu-icon"></span>
+        <h1 tabindex="0"><a href="#" title="Home">Kafe</a></h1>
+        <div class="header-left">
+          <button tabindex="0" id="button-hamburger" aria-label="navigation-menu">☰</button>
         </div>
         <div class="header">
           <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Menu</a>
-          <a href="#">Gallery</a>
-          <a href="#">Contact</a>
+          <!-- <a href="#">About</a> -->
+          <a href="#our-menu">Menus</a>
+          <a href="#our-gallery">Gallery</a>
+          <a href="#our-contact">Contact</a>
+          <a href="#our-services">Services</a>
         </div>
       </div>
+      <script src="./header.js"></script>
     </header>
+
      <div class="top-wrapper">
       <div class="container">
         <h1>The Best Coffee in Progate</h1>
@@ -79,7 +83,7 @@
     <div class="lesson-wrapper">
       <div class="container">
         <div class="heading">
-          <h2>Galeri</h2>
+          <h2 id="our-gallery">Galeri</h2>
         </div>
         <div class="lessons">
           <div class="lesson">
@@ -129,7 +133,7 @@
     </div>
 
     <div class="contact-section">
-      <h1>Contact Us</h1>
+      <h3 id="our-contact">Contact Us</h3>
       <div class="border"></div>
       <form class="contact-form" action="index.html" method="post">
         <input type="text" class="contact-form-text" placeholder="Masukan Nama Kamu">
@@ -140,7 +144,7 @@
       </form>
     </div>
 
-      <footer class="footer">
+      <footer id="our-services" class="footer">
         <div class="container">
           <div class="row">
             <div class="footer-col">
@@ -150,7 +154,7 @@
                 <li><a href="#">Bayu Suhendri</a></li>
                 <li><a href="#">Budhi prasetyo utomo</a></li>
                 <li><a href="#">Andre Rama Andika</a></li>
-                <li><a href="#">Budiansyah</a></li>
+                <li><a href="https://github.com/simopunkc">Budiyanto</a></li>
               </ul>
             </div>
             <div class="footer-col">
@@ -171,10 +175,9 @@
               </ul>
             </div>
             <div class="footer-col">
-              <h4>Contact</h4>
+              <h4>Adrress</h4>
               <div class="social-links">
-                <a href="#">JLn jakarta 01 , Indonesia</a>
-                <a href="#">info@mail.com</a>
+                <a href="#">Jl. Sabang merauke 99 , Indonesia</a>
               </div>
             </div>
           </div>

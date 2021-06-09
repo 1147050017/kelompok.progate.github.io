@@ -1,11 +1,16 @@
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   font-family: "Cormorant Garamond", Georgia, serif;
-  scroll-behavior:smooth;
 }
 
 a {
@@ -81,38 +86,120 @@ li {
   margin-right: 5px;
 }
 
+
+
 header {
-  height: 65px;
-  width: 100%;
-  position :fixed;
+  position: sticky;
+  z-index: 99;
   top: 0;
-  z-index: 10;
 }
 
-.logo {
-  width: 124px;
-  margin-top: 20px;
+.head-container {
+  display: grid;
+  background-color: #000;
+  grid-template-columns: 1fr auto auto;
+}
+
+.head-container h1 {
+  line-height: 65px;
+  padding: 0 25px;
+  font-size: 18px;
+}
+
+.head-container h1 a {
+  padding: 22px 0;
+  color: #fff;
+}
+
+.head-container h1 a:hover {
+  color: #ccc;
 }
 
 .header-left {
-  float: left;
+  display: none;
 }
 
 .header {
-  text-align: center;
+  display: grid;
+  z-index: 99;
+  width: auto;
+  background-color: inherit;
+  position: relative;
+  transform: translate(0, 0);
+  grid-auto-flow: column;
 }
 
+
 .header a {
-  line-height: 65px;
-  padding: 0 25px;
+  padding: 23px 25px;
   color: white;
-  display: block;
-  float: left;
   transition: all 0.5s;
 }
 
 .header a:hover {
   background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+@media screen and (max-width: 670px) {
+
+.header {
+  grid-auto-flow: row;
+  width: 300px;
+  background-color: #222;
+  position: absolute;
+  transform: translate(-300px, 0);
+  transition: transform 0.3s ease-in-out;
+  margin: 0 auto;
+}
+.header a{
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+.header.open {
+  transform: translate(0,0)
+}
+
+.header-left {
+  display: block;
+}
+.header-left button {
+  background-color: #000;
+  padding: 19px 17px;
+  border: none;
+  border-radius: 3px;
+  font-size: 23px;
+  color: #fff;
+  cursor: pointer;
+}
+.header-left button:hover {
+  background-color: #333;
+}
+
+}
+
+
+@media screen and (min-width: 670px) and (max-width: 1000px) {
+.header-left {
+  display: none;
+}
+.header-left button {
+  background-color: inherit;
+}
+.header {
+  width: auto;
+  background-color: inherit;
+  position: relative;
+  transform: translate(0, 0);
+  grid-auto-flow: column;
+}
+
+}
+
+.logo {
+  width: 124px;
+  margin-top: 20px;
 }
 
 /* Tambahkan CSS untuk menu-icon */
@@ -137,9 +224,6 @@ header {
 }
 
 .lesson-wrapper {
-  padding-bottom: 50px;
-  /* padding-left: 5%; */
-  /* padding-right: 5%; */
   background-color: #f7f7f7;
   text-align: center;
 }
@@ -220,9 +304,10 @@ header {
   margin-bottom: 50px;
   padding: 20px;
 }
-.contact-section h1{
+.contact-section h3{
   text-align: center;
   color: #ddd;
+  font-size: 20px;
 }
 .border{
   width: 100px;
@@ -258,7 +343,7 @@ textarea.contact-form-text{
   height: 120px;
 }
 .contact-form-btn{
-  float: right;
+  /* float: right; */
   border: 0;
   background: #34495e;
   color: #fff;
@@ -331,4 +416,9 @@ textarea.contact-form-text{
   .footer-col{
     width: 100%;
 }
+}
+
+.social-links a {
+  color: lightskyblue;
+  text-decoration: none;
 }
