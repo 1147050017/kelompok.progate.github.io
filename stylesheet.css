@@ -5,10 +5,15 @@
 body {
   margin: 0;
   font-family: "Cormorant Garamond", Georgia, serif;
+  scroll-behavior:smooth;
 }
 
 a {
   text-decoration: none;
+}
+
+li {
+  list-style-type: none;
 }
 
 .clear {
@@ -24,7 +29,8 @@ a {
 
 .top-wrapper {
   padding: 180px 0 100px 0;
-  background-image: url(./photo-1497935586351-b67a49e012bf.jpg);
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.75) 0%,rgba(0,0,0,0.75) 100%), url("./photo-1497935586351-b67a49e012bf.jpg");
+
   background-size: cover;
   color: white;
   text-align: center;
@@ -132,8 +138,8 @@ header {
 
 .lesson-wrapper {
   padding-bottom: 50px;
-  padding-left: 5%;
-  padding-right: 5%;
+  /* padding-left: 5%; */
+  /* padding-right: 5%; */
   background-color: #f7f7f7;
   text-align: center;
 }
@@ -208,10 +214,11 @@ header {
 /* contact */
 
 .contact-section{
-  background: url(bg.jpg);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.75) 0%,rgba(0,0,0,0.75) 100%), url("./bg.jpg");
   background-size: cover;
   margin-top: 50px;
   margin-bottom: 50px;
+  padding: 20px;
 }
 .contact-section h1{
   text-align: center;
@@ -236,9 +243,9 @@ header {
   width: 100%;
   box-sizing: border-box;
   margin: 16px 0;
-  border: 0;
-  background: #111;
-  padding: 20px 40px;
+  border: 1px solid #eee;
+  background: #fff;
+  padding: 20px;
   outline: none;
   color: #ddd;
   transition: 0.5s;
