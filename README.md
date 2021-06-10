@@ -1,6 +1,6 @@
 # kelompok.progate.github.io
 Kelompok DTS FGA WEB KELAS A
-kelompok 022
+kelompok A22
 aldi anwarul mukti
 Bayu suhendri
 Budi Prasetyo Utomo
